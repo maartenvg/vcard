@@ -1,0 +1,95 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/foundation-global";
+// @import "foundation/components/grid";
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms";
+// @import "foundation/components/custom-forms";
+// @import "foundation/components/button-groups";
+// @import "foundation/components/dropdown-buttons";
+// @import "foundation/components/split-buttons";
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+
+@import "compass/css3";
+
+@include font-face("PatuaOne", font-files("../fonts/PatuaOne-Regular.ttf"));
+ 
+$overlay-color: rgb(19, 142, 180);
+$shadow: #111 2px 2px 10px;
+$border-radius: 10px;
+
+body {
+  @include background( 
+    radial-gradient(50% 50%, ellipse farthest-corner, rgba(0,0,0, 0), rgba(0, 0, 0, 0.6)),
+    $overlay-color url('../images/bright_squares_2.png') 
+  );
+  background-attachment: fixed;
+
+}
+
+header {
+  margin-top: 50px !important;
+  h2 {
+    white-space: nowrap;
+    font-family: "PatuaOne";
+    color: #fff;
+  }
+
+  .buttons {
+    @include button-group-container;
+    a {
+      @include button;
+      @include border-radius($border-radius);
+      @include box-shadow($shadow);
+      @include single-transition;
+    }
+    & > li { @include button-group-style(false); margin-left: 10px;}
+  }
+}
+
+#main {
+  @include panel;
+  @include background($overlay-color url('../images/fabric_1.png'));
+}
+
+// Screens > 1024px
+@media only screen and (min-width: 64em) { 
+  #main {
+    @include border-radius($border-radius);
+    @include box-shadow($shadow);
+  }
+} 
