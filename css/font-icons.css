@@ -1,4 +1,16 @@
-/* line 7, ../scss/font-icons.scss */
+@font-face {
+  font-family: "FoundiconGeneralEnclosed";
+  src: url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.eot');
+  src: url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.eot?#iefix') format('eot'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.woff') format('woff'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.ttf') format('truetype'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.svg') format('svg');
+}
+
+@font-face {
+  font-family: "FoundiconSocial";
+  src: url('/vcard/fonts/FoundiconSocial/social_foundicons.eot');
+  src: url('/vcard/fonts/FoundiconSocial/social_foundicons.eot?#iefix') format('eot'), url('/vcard/fonts/FoundiconSocial/social_foundicons.woff') format('woff'), url('/vcard/fonts/FoundiconSocial/social_foundicons.ttf') format('truetype'), url('/vcard/fonts/FoundiconSocial/social_foundicons.svg') format('svg');
+}
+
+/* line 13, ../scss/font-icons.scss */
 [class*="icon-"] {
   display: inline;
   width: auto;
@@ -10,7 +22,7 @@
   background-repeat: repeat;
 }
 
-/* line 17, ../scss/font-icons.scss */
+/* line 23, ../scss/font-icons.scss */
 [class*="icon-"]:before {
   font-weight: normal;
   font-style: normal;
@@ -18,22 +30,62 @@
   font-size: 2em;
 }
 
-/* line 23, ../scss/font-icons.scss */
+/* line 29, ../scss/font-icons.scss */
 [class*="icon-social-"]:before {
   font-family: 'FoundiconSocial';
 }
 
-/* line 26, ../scss/font-icons.scss */
+/* line 32, ../scss/font-icons.scss */
 [class*="icon-general-"]:before {
   font-family: 'FoundiconGeneralEnclosed';
 }
 
-/* line 2, ../scss/font-icons.scss */
+/* line 8, ../scss/font-icons.scss */
 .icon-general-star:before {
   content: "\f002";
 }
 
-/* line 2, ../scss/font-icons.scss */
+/* line 8, ../scss/font-icons.scss */
+.icon-general-mail:before {
+  content: "\f007";
+}
+
+/* line 8, ../scss/font-icons.scss */
 .icon-general-idea:before {
   content: "\f022";
+}
+
+/* line 8, ../scss/font-icons.scss */
+.icon-social-rss:before {
+  content: "\f002";
+}
+
+/* line 8, ../scss/font-icons.scss */
+.icon-social-facebook:before {
+  content: "\f003";
+}
+
+/* line 8, ../scss/font-icons.scss */
+.icon-social-twitter:before {
+  content: "\f004";
+}
+
+/* line 8, ../scss/font-icons.scss */
+.icon-social-github:before {
+  content: "\f006";
+}
+
+/* line 8, ../scss/font-icons.scss */
+.icon-social-linkedin:before {
+  content: "\f008";
+}
+
+/* line 8, ../scss/font-icons.scss */
+.icon-social-googleplus:before {
+  content: "\f00d";
+}
+
+/* line 8, ../scss/font-icons.scss */
+.icon-social-skype:before {
+  content: "\f013";
 }

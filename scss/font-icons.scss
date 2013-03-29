@@ -1,3 +1,9 @@
+@import "compass/css3";
+
+@include font-face('FoundiconGeneralEnclosed', font-files('FoundiconGeneralEnclosed/general_enclosed_foundicons.woff','FoundiconGeneralEnclosed/general_enclosed_foundicons.ttf','FoundiconGeneralEnclosed/general_enclosed_foundicons.svg'), 'FoundiconGeneralEnclosed/general_enclosed_foundicons.eot');
+@include font-face('FoundiconSocial', font-files('FoundiconSocial/social_foundicons.woff','FoundiconSocial/social_foundicons.ttf','FoundiconSocial/social_foundicons.svg'), 'FoundiconSocial/social_foundicons.eot');
+
+
 @mixin i-class($type, $name,$pua) {
   .icon-#{$type}-#{$name}:before { 
     content: "\f#{$pua}";
@@ -28,4 +34,13 @@
 }
 
 @include i-class(general, star,"002");
+@include i-class(general, mail,"007");
 @include i-class(general, idea,"022");
+
+@include i-class(social, rss,"002");
+@include i-class(social, facebook,"003");
+@include i-class(social, twitter,"004");
+@include i-class(social, github,"006");
+@include i-class(social, linkedin,"008");
+@include i-class(social, googleplus,"00d");
+@include i-class(social, skype,"013");

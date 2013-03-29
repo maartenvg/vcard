@@ -5536,61 +5536,113 @@ table tfoot tr td {
   max-width: 800px;
 }
 
-/* line 51, ../scss/app.scss */
+/* line 46, ../scss/app.scss */
 .icons-sprite, .icons-email, .icons-facebook, .icons-github, .icons-googleplus, .icons-linkedin, .icons-rss, .icons-skype, .icons-spotify, .icons-twitter {
   display: inline-block;
-  height: 32px;
-  width: 32px;
 }
 
-/* line 106, icons/*.png */
+/* line 178, icons/*.png */
 .icons-sprite, .icons-email, .icons-facebook, .icons-github, .icons-googleplus, .icons-linkedin, .icons-rss, .icons-skype, .icons-spotify, .icons-twitter {
-  background: url('/vcard/images/icons-s27c2450ed3.png') no-repeat;
+  background: url('/vcard/images/icons-sa598ac2289.png') no-repeat;
 }
 
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-email {
-  background-position: 0 -96px;
+  background-position: 0 -700px;
+  height: 50px;
+  width: 50px;
+}
+/* line 43, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-email:hover, .icons-email.email_hover, .icons-email.email-hover {
+  background-position: 0 -450px;
 }
 
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook {
-  background-position: 0 -256px;
+  background-position: 0 -850px;
+  height: 50px;
+  width: 50px;
+}
+/* line 43, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook:hover, .icons-facebook.facebook_hover, .icons-facebook.facebook-hover {
+  background-position: 0 -500px;
 }
 
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-github {
-  background-position: 0 0;
+  background-position: 0 -650px;
+  height: 50px;
+  width: 50px;
+}
+/* line 43, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-github:hover, .icons-github.github_hover, .icons-github.github-hover {
+  background-position: 0 -350px;
 }
 
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-googleplus {
-  background-position: 0 -192px;
+  background-position: 0 -600px;
+  height: 50px;
+  width: 50px;
+}
+/* line 43, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-googleplus:hover, .icons-googleplus.googleplus_hover, .icons-googleplus.googleplus-hover {
+  background-position: 0 -200px;
 }
 
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-linkedin {
-  background-position: 0 -224px;
+  background-position: 0 -800px;
+  height: 50px;
+  width: 50px;
+}
+/* line 43, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-linkedin:hover, .icons-linkedin.linkedin_hover, .icons-linkedin.linkedin-hover {
+  background-position: 0 -300px;
 }
 
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-rss {
-  background-position: 0 -128px;
+  background-position: 0 -400px;
+  height: 50px;
+  width: 50px;
+}
+/* line 43, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-rss:hover, .icons-rss.rss_hover, .icons-rss.rss-hover {
+  background-position: 0 -100px;
 }
 
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-skype {
-  background-position: 0 -32px;
+  background-position: 0 -550px;
+  height: 50px;
+  width: 50px;
+}
+/* line 43, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-skype:hover, .icons-skype.skype_hover, .icons-skype.skype-hover {
+  background-position: 0 -150px;
 }
 
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-spotify {
-  background-position: 0 -64px;
+  background-position: 0 -50px;
+  height: 50px;
+  width: 50px;
+}
+/* line 43, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-spotify:hover, .icons-spotify.spotify_hover, .icons-spotify.spotify-hover {
+  background-position: 0 0;
 }
 
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter {
-  background-position: 0 -160px;
+  background-position: 0 -750px;
+  height: 50px;
+  width: 50px;
+}
+/* line 43, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter:hover, .icons-twitter.twitter_hover, .icons-twitter.twitter-hover {
+  background-position: 0 -250px;
 }
 
 @font-face {
@@ -5611,19 +5663,7 @@ table tfoot tr td {
   src: url('/vcard/fonts/PatuaOne/patuaone.eot?#iefix') format('eot'), url('/vcard/fonts/PatuaOne/patuaone.woff') format('woff'), url('/vcard/fonts/PatuaOne/patuaone.ttf') format('truetype'), url('/vcard/fonts/PatuaOne/patuaone.svg') format('svg');
 }
 
-@font-face {
-  font-family: "FoundiconGeneralEnclosed";
-  src: url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.eot');
-  src: url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.eot?#iefix') format('eot'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.woff') format('woff'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.ttf') format('truetype'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.svg') format('svg');
-}
-
-@font-face {
-  font-family: "FoundiconSocial";
-  src: url('/vcard/fonts/FoundiconSocial/social_foundicons.eot');
-  src: url('/vcard/fonts/FoundiconSocial/social_foundicons.eot?#iefix') format('eot'), url('/vcard/fonts/FoundiconSocial/social_foundicons.woff') format('woff'), url('/vcard/fonts/FoundiconSocial/social_foundicons.ttf') format('truetype'), url('/vcard/fonts/FoundiconSocial/social_foundicons.svg') format('svg');
-}
-
-/* line 74, ../scss/app.scss */
+/* line 71, ../scss/app.scss */
 body {
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.6))), #138eb4 url("../images/bright_squares_2.png");
   background: -webkit-radial-gradient(50% 50%, ellipse farthest-corner, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), #138eb4 url("../images/bright_squares_2.png");
@@ -5633,17 +5673,16 @@ body {
   background-attachment: fixed;
 }
 
-/* line 82, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 header {
   margin-top: 50px !important;
 }
-/* line 84, ../scss/app.scss */
+/* line 81, ../scss/app.scss */
 header h1, header h2 {
-  white-space: nowrap;
   color: #ddd;
   font-variant: small-caps;
 }
-/* line 90, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 header .buttons {
   list-style: none;
   margin: 0;
@@ -5658,7 +5697,7 @@ header .buttons:before, header .buttons:after {
 header .buttons:after {
   clear: both;
 }
-/* line 92, ../scss/app.scss */
+/* line 88, ../scss/app.scss */
 header .buttons a {
   border-style: solid;
   border-width: 1px;
@@ -5700,7 +5739,7 @@ header .buttons a:hover, header .buttons a:focus {
 header .buttons a:hover, header .buttons a:focus {
   color: white;
 }
-/* line 98, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
 header .buttons > li {
   margin: 0 0 0 -1px;
   float: left;
@@ -5711,7 +5750,7 @@ header .buttons > li:first-child {
   margin-left: 0;
 }
 
-/* line 102, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 #main {
   border-style: solid;
   border-width: 1px;
@@ -5742,7 +5781,7 @@ header .buttons > li:first-child {
 #main h1.subheader, #main h2.subheader, #main h3.subheader, #main h4.subheader, #main h5.subheader, #main h6.subheader {
   line-height: 1.4;
 }
-/* line 106, ../scss/app.scss */
+/* line 102, ../scss/app.scss */
 #main #about {
   background-color: #c1e6f1;
   -webkit-border-radius: 5px;
@@ -5751,20 +5790,28 @@ header .buttons > li:first-child {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 110, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 #main #about ul {
   list-style-type: none;
 }
-/* line 114, ../scss/app.scss */
+/* line 110, ../scss/app.scss */
 #main #about li strong {
   color: #222;
   background-color: #ffe04f;
   font-variant: small-caps;
   font-family: "Rokkitt", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
+/* line 119, ../scss/app.scss */
+#main .social a {
+  color: gray;
+}
+/* line 123, ../scss/app.scss */
+#main .social a:hover {
+  color: blue;
+}
 
 @media only screen {
-  /* line 125, ../scss/app.scss */
+  /* line 129, ../scss/app.scss */
   .small-column, #about li strong, #about li a, #about li span {
     position: relative;
     padding-left: 0.9375em;
@@ -5773,17 +5820,105 @@ header .buttons > li:first-child {
     float: left;
   }
 
-  /* line 131, ../scss/app.scss */
+  /* line 133, ../scss/app.scss */
+  #social {
+    display: block;
+    padding: 0;
+    margin: 0 0px;
+    *zoom: 1;
+  }
+  /* line 184, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/_foundation-global.scss */
+  #social:before, #social:after {
+    content: " ";
+    display: table;
+  }
+  /* line 185, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/_foundation-global.scss */
+  #social:after {
+    clear: both;
+  }
+  /* line 26, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/components/_block-grid.scss */
+  #social > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 0px 0px;
+  }
+  /* line 35, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/components/_block-grid.scss */
+  #social > li {
+    width: 33.33333%;
+    padding: 0 0px 0px;
+  }
+  /* line 39, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/components/_block-grid.scss */
+  #social > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 139, ../scss/app.scss */
   #about li strong {
     padding-left: 10px;
   }
-  /* line 135, ../scss/app.scss */
+  /* line 143, ../scss/app.scss */
   #about li a, #about li span {
     padding-left: 20px;
   }
 }
-@media only screen and (min-width: 380px) and (max-width: 767px), only screen and (min-width: 920px) {
-  /* line 146, ../scss/app.scss */
+@media only screen and (min-width: 400px) {
+  /* line 154, ../scss/app.scss */
+  #social > li {
+    clear: none !important;
+  }
+
+  /* line 156, ../scss/app.scss */
+  #social {
+    display: block;
+    padding: 0;
+    margin: 0 0px;
+    *zoom: 1;
+  }
+  /* line 184, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/_foundation-global.scss */
+  #social:before, #social:after {
+    content: " ";
+    display: table;
+  }
+  /* line 185, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/_foundation-global.scss */
+  #social:after {
+    clear: both;
+  }
+  /* line 26, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/components/_block-grid.scss */
+  #social > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 0px 0px;
+  }
+  /* line 35, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/components/_block-grid.scss */
+  #social > li {
+    width: 11.11111%;
+    padding: 0 0px 0px;
+  }
+  /* line 39, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/components/_block-grid.scss */
+  #social > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+
+  /* line 160, ../scss/app.scss */
+  #main p {
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 280px) {
+  /* line 168, ../scss/app.scss */
+  body {
+    font-size: 0.8em;
+  }
+
+  /* line 171, ../scss/app.scss */
+  header h1 {
+    font-size: 0.6em;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 767px), only screen and (min-width: 920px) {
+  /* line 181, ../scss/app.scss */
   #about li strong:after {
     content: "";
     display: block;
@@ -5795,7 +5930,7 @@ header .buttons > li:first-child {
     right: -9px;
     top: 7px;
   }
-  /* line 153, ../scss/app.scss */
+  /* line 188, ../scss/app.scss */
   #about li strong {
     position: relative;
     padding-left: 0.9375em;
@@ -5805,7 +5940,7 @@ header .buttons > li:first-child {
     text-align: center;
     padding: 0;
   }
-  /* line 158, ../scss/app.scss */
+  /* line 193, ../scss/app.scss */
   #about li a, #about li span {
     position: relative;
     padding-left: 0.9375em;
@@ -5813,14 +5948,14 @@ header .buttons > li:first-child {
     width: 75%;
     float: left;
   }
-  /* line 161, ../scss/app.scss */
+  /* line 196, ../scss/app.scss */
   #about li strong, #about li a, #about li span {
     margin-top: 5px;
     margin-bottom: 5px;
   }
 }
 @media only screen and (min-width: 1010px) {
-  /* line 172, ../scss/app.scss */
+  /* line 207, ../scss/app.scss */
   #main {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

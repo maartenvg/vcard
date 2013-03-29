@@ -43,25 +43,21 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+.icons-sprite {
+  display: inline-block;
+}
 
+
+$icons-sprite-dimensions:true;
+@import "icons/*.png";
+@include all-icons-sprites;
 
 
 @import "compass/css3";
 
-.icons-sprite {
-  display: inline-block;
-  height: 32px;
-  width: 32px;  
-}
-
-@import "icons/*.png";
-@include all-icons-sprites;
-
 @include font-face('Rokkitt', font-files('Rokkitt/rokkitt.woff','Rokkitt/rokkitt.ttf','Rokkitt/rokkitt.svg'), 'Rokkitt/rokkitt.eot');
 @include font-face('Ubuntu', font-files('Ubuntu/ubuntu.woff','Ubuntu/ubuntu.ttf','Ubuntu/ubuntu.svg'), 'Ubuntu/ubuntu.eot');
 @include font-face('PatuaOne', font-files('PatuaOne/patuaone.woff','PatuaOne/patuaone.ttf','PatuaOne/patuaone.svg'), 'PatuaOne/patuaone.eot');
-@include font-face('FoundiconGeneralEnclosed', font-files('FoundiconGeneralEnclosed/general_enclosed_foundicons.woff','FoundiconGeneralEnclosed/general_enclosed_foundicons.ttf','FoundiconGeneralEnclosed/general_enclosed_foundicons.svg'), 'FoundiconGeneralEnclosed/general_enclosed_foundicons.eot');
-@include font-face('FoundiconSocial', font-files('FoundiconSocial/social_foundicons.woff','FoundiconSocial/social_foundicons.ttf','FoundiconSocial/social_foundicons.svg'), 'FoundiconSocial/social_foundicons.eot');
 
 $overlay-color: rgb(19, 142, 180);
 $main-color: #FFF5CB;
@@ -70,6 +66,7 @@ $border-radius: 10px;
 $border-radius-small: 5px;
 $about-color: #C1E6F1;
 $about-header-color: #ffe04f;
+$block-grid-default-spacing: 0px;
 
 body {
   @include background( 
@@ -81,8 +78,7 @@ body {
 
 header {
   margin-top: 50px !important;
-  h1, h2 {
-    white-space: nowrap;    
+  h1, h2 { 
     color: #ddd;
     font-variant: small-caps;
   }
@@ -119,11 +115,23 @@ header {
       }
     }
   }
+  
+  .social a {
+    color: gray;
+  }
+  
+  .social a:hover {
+    color: blue;
+  }
 }
 
 @media #{$screen} {
   .small-column {
     @include grid-column(12);
+  }
+  
+  #social {
+    @include block-grid(3); 
   }
   
   #about {
@@ -140,7 +148,34 @@ header {
   }
 }
 
-@media only screen and (min-width: 380px) and (max-width: 767px), only screen and (min-width: 920px) {
+// Anything larger than 400px
+@media only screen and (min-width: 400px)
+{
+  #social > li { clear: none !important; }
+  
+  #social {
+    @include block-grid(9); 
+  }
+  
+  #main p {
+    text-align: justify;
+  }
+}
+
+// Anything smaller than 280px
+@media only screen and (max-width: 280px)
+{
+  body {
+    font-size: 0.8em;
+  }
+  header h1 {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 767px), only screen and (min-width: 920px) {
+  
+  
   #about {
     li {
       strong:after {
