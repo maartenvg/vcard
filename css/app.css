@@ -5543,7 +5543,7 @@ table tfoot tr td {
 
 /* line 178, icons/*.png */
 .icons-sprite, .icons-email, .icons-facebook, .icons-github, .icons-googleplus, .icons-linkedin, .icons-rss, .icons-skype, .icons-spotify, .icons-twitter {
-  background: url('/vcard/images/icons-sa598ac2289.png') no-repeat;
+  background: url('/images/icons-sa598ac2289.png') no-repeat;
 }
 
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -5647,20 +5647,20 @@ table tfoot tr td {
 
 @font-face {
   font-family: "Rokkitt";
-  src: url('/vcard/fonts/Rokkitt/rokkitt.eot');
-  src: url('/vcard/fonts/Rokkitt/rokkitt.eot?#iefix') format('eot'), url('/vcard/fonts/Rokkitt/rokkitt.woff') format('woff'), url('/vcard/fonts/Rokkitt/rokkitt.ttf') format('truetype'), url('/vcard/fonts/Rokkitt/rokkitt.svg') format('svg');
+  src: url('/fonts/Rokkitt/rokkitt.eot');
+  src: url('/fonts/Rokkitt/rokkitt.eot?#iefix') format('eot'), url('/fonts/Rokkitt/rokkitt.woff') format('woff'), url('/fonts/Rokkitt/rokkitt.ttf') format('truetype'), url('/fonts/Rokkitt/rokkitt.svg') format('svg');
 }
 
 @font-face {
   font-family: "Ubuntu";
-  src: url('/vcard/fonts/Ubuntu/ubuntu.eot');
-  src: url('/vcard/fonts/Ubuntu/ubuntu.eot?#iefix') format('eot'), url('/vcard/fonts/Ubuntu/ubuntu.woff') format('woff'), url('/vcard/fonts/Ubuntu/ubuntu.ttf') format('truetype'), url('/vcard/fonts/Ubuntu/ubuntu.svg') format('svg');
+  src: url('/fonts/Ubuntu/ubuntu.eot');
+  src: url('/fonts/Ubuntu/ubuntu.eot?#iefix') format('eot'), url('/fonts/Ubuntu/ubuntu.woff') format('woff'), url('/fonts/Ubuntu/ubuntu.ttf') format('truetype'), url('/fonts/Ubuntu/ubuntu.svg') format('svg');
 }
 
 @font-face {
   font-family: "PatuaOne";
-  src: url('/vcard/fonts/PatuaOne/patuaone.eot');
-  src: url('/vcard/fonts/PatuaOne/patuaone.eot?#iefix') format('eot'), url('/vcard/fonts/PatuaOne/patuaone.woff') format('woff'), url('/vcard/fonts/PatuaOne/patuaone.ttf') format('truetype'), url('/vcard/fonts/PatuaOne/patuaone.svg') format('svg');
+  src: url('/fonts/PatuaOne/patuaone.eot');
+  src: url('/fonts/PatuaOne/patuaone.eot?#iefix') format('eot'), url('/fonts/PatuaOne/patuaone.woff') format('woff'), url('/fonts/PatuaOne/patuaone.ttf') format('truetype'), url('/fonts/PatuaOne/patuaone.svg') format('svg');
 }
 
 /* line 71, ../scss/app.scss */

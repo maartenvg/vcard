@@ -1,13 +1,13 @@
 @font-face {
   font-family: "FoundiconGeneralEnclosed";
-  src: url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.eot');
-  src: url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.eot?#iefix') format('eot'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.woff') format('woff'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.ttf') format('truetype'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.svg') format('svg');
+  src: url('/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.eot');
+  src: url('/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.eot?#iefix') format('eot'), url('/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.woff') format('woff'), url('/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.ttf') format('truetype'), url('/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.svg') format('svg');
 }
 
 @font-face {
   font-family: "FoundiconSocial";
-  src: url('/vcard/fonts/FoundiconSocial/social_foundicons.eot');
-  src: url('/vcard/fonts/FoundiconSocial/social_foundicons.eot?#iefix') format('eot'), url('/vcard/fonts/FoundiconSocial/social_foundicons.woff') format('woff'), url('/vcard/fonts/FoundiconSocial/social_foundicons.ttf') format('truetype'), url('/vcard/fonts/FoundiconSocial/social_foundicons.svg') format('svg');
+  src: url('/fonts/FoundiconSocial/social_foundicons.eot');
+  src: url('/fonts/FoundiconSocial/social_foundicons.eot?#iefix') format('eot'), url('/fonts/FoundiconSocial/social_foundicons.woff') format('woff'), url('/fonts/FoundiconSocial/social_foundicons.ttf') format('truetype'), url('/fonts/FoundiconSocial/social_foundicons.svg') format('svg');
 }
 
 /* line 13, ../scss/font-icons.scss */
