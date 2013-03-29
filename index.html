@@ -1,97 +1,116 @@
-
 <!DOCTYPE html>
 <!--[if IE 8]>          <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Maarten van Grootel</title>
-  <base href="file:///home/maarten/Dropbox/Projects/vcard/" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/app.css" />
-    
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Home :: Maarten van Grootel.nl</title>
+    <base href="http://192.168.2.29/vcard/">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/font-icons.css" />
+    <link rel="stylesheet" href="css/app.css" />
 
+    <meta name="viewport" content="width=device-width" />
 
-  <script src="js/vendor/custom.modernizr.js"></script>
-</head>
-<body>
-  
-  <header class="row">
-    <div class="small-12 large-6 columns">
-      <h2>Maarten van Grootel</h2>
+    <script src="js/vendor/custom.modernizr.js"></script>
+    <!--[if IE ]>
+    <link rel="stylesheet" href="css/ie.css" />
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <header class="row">
+      <div class="small-12 large-6 columns">
+        <h1 class="hide-for-small"><small class="show-for-medium-up">Hi, I am</small> Maarten van Grootel</h1>
+        <h2 class="show-for-small">Maarten van Grootel</h2>
+      </div>
+    </header>
+
+    <div class="row" id="main">
+      <div class="small-12 large-8 columns">
+        <h3>... a Dutch developer living in Canada.</h3>
+        <p>
+          My name is <abbr title="Pronounced as /'maːrtə(n)/, but you can call me Martin">Maarten</abbr> and I am a software developer.
+          I specialize in web applications in Java, C# and recently added Ruby. Have a look at my <a href="resume/">resume</a>, or contact me 
+          for more information.
+        </p>
+        <p>
+          <a class="icons-linkedin" href="http://www.linkedin.com/in/maartenvangrootel" title="My LinkedIn">&nbsp;</a>
+          <a class="icons-github" href="https://github.com/maartenvg" title="My GitHub">&nbsp;</a>
+          <a class="icons-twitter" href="https://twitter.com/mvgrootel" title="My Twitter">&nbsp;</a>
+          <a class="icons-facebook" href="https://www.facebook.com/mvangrootel" title="My Facebook">&nbsp;</a>
+          <a class="icons-rss" href="http://www.maartenvangrootel.nl/blog" title="My Blog">&nbsp;</a>
+          <a class="icons-spotify" href="http://open.spotify.com/user/mvgrootel" title="My Spotify">&nbsp;</a>
+          <a class="icons-googleplus" href="https://plus.google.com/u/0/103980360348888720140/posts" title="My Google+">&nbsp;</a>
+          <a class="icons-email" href="mailto:mail@maartenvangrootel.nl" title="E-mail me">&nbsp;</a>                    
+          <a class="icons-skype" href="skype:mvgrootel?call" title="Call me">&nbsp;</a>
+          <i class="icon-general-idea"></i>
+        </p>
+      </div>
+      <div id="about" class="small-12 large-4 columns">
+        <p>
+          <ul class="row">
+            <li>
+              <strong>Name</strong> <span>Maarten van Grootel</span>
+            </li>
+            <li>
+              <strong>Location</strong> <a href="http://goo.gl/maps/Kxazq">Montreal, Canada</a>
+            </li>
+            <li>
+              <strong>Phone</strong> <a href="tel:+15149651044">+1 (514) 965 1044</a>
+            </li>
+            <li>
+              <strong>Skype</strong> <a href="skype:mvgrootel?call">mvgrootel</a>
+            </li>
+            <li>
+              <strong>E-mail</strong> <a href="mailto:mail@maartenvangrootel.nl">mail@maartenvangrootel.nl</a>
+            </li>
+            <li>
+              <strong>Age</strong> <span>29</span>
+            </li>
+          </ul>
+        </p>
+      </div>
     </div>
-  </header>
 
-  <div class="row" id="main">
-    <div class="small-3 columns">
-    	<p><img src="images/me.jpg" /></p>
-    </div>
-    <div class="small-5 columns">
-    	<h3>... a Dutch developer living in Canada.</h3>
-    	<p>My name is Maarten van Grootel and I am a software developer. I specialize in web applications, but I am language agnostic.</p>
-    </div>
-     <div id="about" class="small-4 columns">
-    	<p>
-    	<dl>
-    		<dt>Name</dt>
-    		<dd>Maarten van Grootel</dd>
-    		<dt>Phone</dt>
-    		<dd>+1 (514) 965 1044</dd>
-    		<dt>E-mail</dt>
-    		<dd>mail [*] maartenvangrootel.nl</dd>
-    		<dt>Age</dt>
-    		<dd>29</dd>    		
-    	</dl>
-    	</p>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="small-12 columns">
-      <p><em>&copy; 2013 Maarten van Grootel</em></p>
-    </div>  
-  </div>
+    <script>
+      document.write('<script src=' + ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') + '.js><\/script>')
+    </script>
 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  
-  <script src="js/foundation/foundation.js"></script>
-  
-  
-  <script src="js/foundation/foundation.alerts.js"></script>
-  
-  <script src="js/foundation/foundation.forms.js"></script>
-  
-  <script src="js/foundation/foundation.orbit.js"></script>
-  
-  <script src="js/foundation/foundation.dropdown.js"></script>
-  
-  <script src="js/foundation/foundation.reveal.js"></script>
-  
-  <script src="js/foundation/foundation.topbar.js"></script>
-  
-  <script src="js/foundation/foundation.joyride.js"></script>
-  
-  <script src="js/foundation/foundation.magellan.js"></script>
-  
-  <script src="js/foundation/foundation.clearing.js"></script>
-  
-  <script src="js/foundation/foundation.section.js"></script>
-  
-  <script src="js/foundation/foundation.cookie.js"></script>
-  
-  <script src="js/foundation/foundation.placeholder.js"></script>
-  
-  <script src="js/foundation/foundation.tooltips.js"></script>
-  
-  
-  <script>
-    $(document).foundation();
-  </script>
-</body>
+    <script src="js/foundation/foundation.js"></script>
+
+    <script src="js/foundation/foundation.alerts.js"></script>
+
+    <script src="js/foundation/foundation.forms.js"></script>
+
+    <script src="js/foundation/foundation.orbit.js"></script>
+
+    <script src="js/foundation/foundation.dropdown.js"></script>
+
+    <script src="js/foundation/foundation.reveal.js"></script>
+
+    <script src="js/foundation/foundation.topbar.js"></script>
+
+    <script src="js/foundation/foundation.joyride.js"></script>
+
+    <script src="js/foundation/foundation.magellan.js"></script>
+
+    <script src="js/foundation/foundation.clearing.js"></script>
+
+    <script src="js/foundation/foundation.section.js"></script>
+
+    <script src="js/foundation/foundation.cookie.js"></script>
+
+    <script src="js/foundation/foundation.placeholder.js"></script>
+
+    <script src="js/foundation/foundation.tooltips.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>

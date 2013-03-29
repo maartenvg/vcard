@@ -1,0 +1,39 @@
+/* line 7, ../scss/font-icons.scss */
+[class*="icon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+/* line 17, ../scss/font-icons.scss */
+[class*="icon-"]:before {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  font-size: 2em;
+}
+
+/* line 23, ../scss/font-icons.scss */
+[class*="icon-social-"]:before {
+  font-family: 'FoundiconSocial';
+}
+
+/* line 26, ../scss/font-icons.scss */
+[class*="icon-general-"]:before {
+  font-family: 'FoundiconGeneralEnclosed';
+}
+
+/* line 2, ../scss/font-icons.scss */
+.icon-general-star:before {
+  content: "\f002";
+}
+
+/* line 2, ../scss/font-icons.scss */
+.icon-general-idea:before {
+  content: "\f022";
+}

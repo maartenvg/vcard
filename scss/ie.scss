@@ -1,0 +1,10 @@
+@import "compass/css3";
+
+$overlay-color: rgb(19, 142, 180);
+
+body {
+  @include background(
+    $overlay-color url('../images/bright_squares_2.png') 
+  );
+  background-attachment: fixed;
+}

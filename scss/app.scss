@@ -44,36 +44,46 @@
 // @import "foundation/components/dropdown";
 
 
+
+
 @import "compass/css3";
 
-//@include font-face('Rokkitt', font-files('Rokkitt/rokkitt.woff','Rokkitt/rokkitt.ttf','Rokkitt/rokkitt.svg'), 'Rokkitt/rokkitt.eot');
-@font-face {
-  font-family: "Rokkitt";
-  src: url('../fonts/Rokkitt/rokkitt.eot');
-  src: url('../fonts/Rokkitt/rokkitt.eot?#iefix') format('eot'), url('../fonts/Rokkitt/rokkitt.woff') format('woff'), url('../fonts/Rokkitt/rokkitt.ttf') format('truetype'), url('../fonts/Rokkitt/rokkitt.svg') format('svg');
+.icons-sprite {
+  display: inline-block;
+  height: 32px;
+  width: 32px;  
 }
 
- 
+@import "icons/*.png";
+@include all-icons-sprites;
+
+@include font-face('Rokkitt', font-files('Rokkitt/rokkitt.woff','Rokkitt/rokkitt.ttf','Rokkitt/rokkitt.svg'), 'Rokkitt/rokkitt.eot');
+@include font-face('Ubuntu', font-files('Ubuntu/ubuntu.woff','Ubuntu/ubuntu.ttf','Ubuntu/ubuntu.svg'), 'Ubuntu/ubuntu.eot');
+@include font-face('PatuaOne', font-files('PatuaOne/patuaone.woff','PatuaOne/patuaone.ttf','PatuaOne/patuaone.svg'), 'PatuaOne/patuaone.eot');
+@include font-face('FoundiconGeneralEnclosed', font-files('FoundiconGeneralEnclosed/general_enclosed_foundicons.woff','FoundiconGeneralEnclosed/general_enclosed_foundicons.ttf','FoundiconGeneralEnclosed/general_enclosed_foundicons.svg'), 'FoundiconGeneralEnclosed/general_enclosed_foundicons.eot');
+@include font-face('FoundiconSocial', font-files('FoundiconSocial/social_foundicons.woff','FoundiconSocial/social_foundicons.ttf','FoundiconSocial/social_foundicons.svg'), 'FoundiconSocial/social_foundicons.eot');
+
 $overlay-color: rgb(19, 142, 180);
+$main-color: #FFF5CB;
 $shadow: #111 2px 2px 10px;
 $border-radius: 10px;
 $border-radius-small: 5px;
+$about-color: #C1E6F1;
+$about-header-color: #ffe04f;
 
 body {
   @include background( 
-    radial-gradient(50% 50%, ellipse farthest-corner, rgba(0,0,0, 0), rgba(0, 0, 0, 0.6)),
+    radial-gradient(50% 50%, ellipse farthest-corner, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
     $overlay-color url('../images/bright_squares_2.png') 
   );
   background-attachment: fixed;
-  font-family: 'Rokkitt' !important;
 }
 
 header {
   margin-top: 50px !important;
-  h2 {
+  h1, h2 {
     white-space: nowrap;    
-    color: #fff;
-    font-family: 'Rokkitt';
+    color: #ddd;
     font-variant: small-caps;
   }
 
@@ -91,25 +101,77 @@ header {
 
 #main {
   @include panel;
-  @include background($overlay-color url('../images/fabric_1.png'));
+  @include background($main-color url('../images/fabric_of_squares_gray.png'));
   
   #about {
-    background-color: #fff;
+    background-color: $about-color;
     @include border-radius($border-radius-small);
-  }
-  
-  img {
-    @include border-radius($border-radius-small);
-    padding: 7px;
-    background-color: #ddd; 
-    border: 2px solid #fff;
+    
+    ul {
+      list-style-type: none;
+    }
+    li {      
+      strong {
+        color: #222;
+        background-color: $about-header-color;       
+        font-variant: small-caps;
+        font-family: $header-font-family
+      }
+    }
   }
 }
 
+@media #{$screen} {
+  .small-column {
+    @include grid-column(12);
+  }
+  
+  #about {
+    li {
+      strong {
+        @extend .small-column;
+        padding-left: 10px;
+      }
+      a, span {
+        @extend .small-column;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 767px), only screen and (min-width: 920px) {
+  #about {
+    li {
+      strong:after {
+        @include css-triangle(5px, $about-header-color, left);
+        position: absolute;
+        right: -9px;
+        top: 7px;
+      }
+      
+      strong {
+        @include grid-column(3);
+        text-align: center;
+        padding: 0;
+      } 
+      a, span {
+        @include grid-column(9);
+      }
+      strong, a, span {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+
 // Screens > 1024px
-@media only screen and (min-width: 64em) { 
+@media only screen and (min-width: 1010px) { 
   #main {
     @include border-radius($border-radius);
     @include box-shadow($shadow);
   }
 } 
+

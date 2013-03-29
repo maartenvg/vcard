@@ -1,0 +1,31 @@
+@mixin i-class($type, $name,$pua) {
+  .icon-#{$type}-#{$name}:before { 
+    content: "\f#{$pua}";
+  }
+}
+
+[class*="icon-"] { 
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+[class*="icon-"]:before {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  font-size: 2em;
+}
+[class*="icon-social-"]:before {
+  font-family: 'FoundiconSocial';
+}
+[class*="icon-general-"]:before {
+  font-family: 'FoundiconGeneralEnclosed';
+}
+
+@include i-class(general, star,"002");
+@include i-class(general, idea,"022");

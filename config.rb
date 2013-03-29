@@ -3,10 +3,10 @@ require 'zurb-foundation'
 
 
 # Set this to the root of your project when deployed:
-http_path = "/"
+http_path = "/vcard/"
 css_dir = "css"
 sass_dir = "scss"
-images_dir = "img"
+images_dir = "images"
 javascripts_dir = "js"
 fonts_dir = "fonts"
 fonts_path = "fonts"

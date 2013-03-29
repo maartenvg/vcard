@@ -19,7 +19,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -1493,7 +1493,7 @@ p aside {
 /* Default header styles */
 /* line 176, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Rokkitt", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #222222;
@@ -3635,7 +3635,7 @@ form.custom .custom.disabled {
 
 /* line 314, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/components/_top-bar.scss */
 .top-bar-js-breakpoint {
-  width: 58.75em !important;
+  width: 25em !important;
   visibility: hidden;
 }
 
@@ -3644,7 +3644,7 @@ form.custom .custom.disabled {
   display: block;
 }
 
-@media only screen and (min-width: 58.75em) {
+@media only screen and (min-width: 25em) {
   /* line 323, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/components/_top-bar.scss */
   .top-bar {
     background: #111111;
@@ -5536,13 +5536,94 @@ table tfoot tr td {
   max-width: 800px;
 }
 
-@font-face {
-  font-family: "Rokkitt";
-  src: url("../fonts/Rokkitt/rokkitt.eot");
-  src: url("../fonts/Rokkitt/rokkitt.eot?#iefix") format("eot"), url("../fonts/Rokkitt/rokkitt.woff") format("woff"), url("../fonts/Rokkitt/rokkitt.ttf") format("truetype"), url("../fonts/Rokkitt/rokkitt.svg") format("svg");
+/* line 51, ../scss/app.scss */
+.icons-sprite, .icons-email, .icons-facebook, .icons-github, .icons-googleplus, .icons-linkedin, .icons-rss, .icons-skype, .icons-spotify, .icons-twitter {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
 }
 
-/* line 62, ../scss/app.scss */
+/* line 106, icons/*.png */
+.icons-sprite, .icons-email, .icons-facebook, .icons-github, .icons-googleplus, .icons-linkedin, .icons-rss, .icons-skype, .icons-spotify, .icons-twitter {
+  background: url('/vcard/images/icons-s27c2450ed3.png') no-repeat;
+}
+
+/* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-email {
+  background-position: 0 -96px;
+}
+
+/* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook {
+  background-position: 0 -256px;
+}
+
+/* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-github {
+  background-position: 0 0;
+}
+
+/* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-googleplus {
+  background-position: 0 -192px;
+}
+
+/* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-linkedin {
+  background-position: 0 -224px;
+}
+
+/* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-rss {
+  background-position: 0 -128px;
+}
+
+/* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-skype {
+  background-position: 0 -32px;
+}
+
+/* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-spotify {
+  background-position: 0 -64px;
+}
+
+/* line 60, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 -160px;
+}
+
+@font-face {
+  font-family: "Rokkitt";
+  src: url('/vcard/fonts/Rokkitt/rokkitt.eot');
+  src: url('/vcard/fonts/Rokkitt/rokkitt.eot?#iefix') format('eot'), url('/vcard/fonts/Rokkitt/rokkitt.woff') format('woff'), url('/vcard/fonts/Rokkitt/rokkitt.ttf') format('truetype'), url('/vcard/fonts/Rokkitt/rokkitt.svg') format('svg');
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url('/vcard/fonts/Ubuntu/ubuntu.eot');
+  src: url('/vcard/fonts/Ubuntu/ubuntu.eot?#iefix') format('eot'), url('/vcard/fonts/Ubuntu/ubuntu.woff') format('woff'), url('/vcard/fonts/Ubuntu/ubuntu.ttf') format('truetype'), url('/vcard/fonts/Ubuntu/ubuntu.svg') format('svg');
+}
+
+@font-face {
+  font-family: "PatuaOne";
+  src: url('/vcard/fonts/PatuaOne/patuaone.eot');
+  src: url('/vcard/fonts/PatuaOne/patuaone.eot?#iefix') format('eot'), url('/vcard/fonts/PatuaOne/patuaone.woff') format('woff'), url('/vcard/fonts/PatuaOne/patuaone.ttf') format('truetype'), url('/vcard/fonts/PatuaOne/patuaone.svg') format('svg');
+}
+
+@font-face {
+  font-family: "FoundiconGeneralEnclosed";
+  src: url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.eot');
+  src: url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.eot?#iefix') format('eot'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.woff') format('woff'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.ttf') format('truetype'), url('/vcard/fonts/FoundiconGeneralEnclosed/general_enclosed_foundicons.svg') format('svg');
+}
+
+@font-face {
+  font-family: "FoundiconSocial";
+  src: url('/vcard/fonts/FoundiconSocial/social_foundicons.eot');
+  src: url('/vcard/fonts/FoundiconSocial/social_foundicons.eot?#iefix') format('eot'), url('/vcard/fonts/FoundiconSocial/social_foundicons.woff') format('woff'), url('/vcard/fonts/FoundiconSocial/social_foundicons.ttf') format('truetype'), url('/vcard/fonts/FoundiconSocial/social_foundicons.svg') format('svg');
+}
+
+/* line 74, ../scss/app.scss */
 body {
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.6))), #138eb4 url("../images/bright_squares_2.png");
   background: -webkit-radial-gradient(50% 50%, ellipse farthest-corner, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), #138eb4 url("../images/bright_squares_2.png");
@@ -5550,21 +5631,19 @@ body {
   background: -o-radial-gradient(50% 50%, ellipse farthest-corner, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), #138eb4 url("../images/bright_squares_2.png");
   background: radial-gradient(50% 50%, ellipse farthest-corner, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), #138eb4 url("../images/bright_squares_2.png");
   background-attachment: fixed;
-  font-family: 'Rokkitt' !important;
 }
 
-/* line 71, ../scss/app.scss */
+/* line 82, ../scss/app.scss */
 header {
   margin-top: 50px !important;
 }
-/* line 73, ../scss/app.scss */
-header h2 {
+/* line 84, ../scss/app.scss */
+header h1, header h2 {
   white-space: nowrap;
-  color: #fff;
-  font-family: 'Rokkitt';
+  color: #ddd;
   font-variant: small-caps;
 }
-/* line 80, ../scss/app.scss */
+/* line 90, ../scss/app.scss */
 header .buttons {
   list-style: none;
   margin: 0;
@@ -5579,7 +5658,7 @@ header .buttons:before, header .buttons:after {
 header .buttons:after {
   clear: both;
 }
-/* line 82, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 header .buttons a {
   border-style: solid;
   border-width: 1px;
@@ -5621,7 +5700,7 @@ header .buttons a:hover, header .buttons a:focus {
 header .buttons a:hover, header .buttons a:focus {
   color: white;
 }
-/* line 88, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 header .buttons > li {
   margin: 0 0 0 -1px;
   float: left;
@@ -5632,7 +5711,7 @@ header .buttons > li:first-child {
   margin-left: 0;
 }
 
-/* line 92, ../scss/app.scss */
+/* line 102, ../scss/app.scss */
 #main {
   border-style: solid;
   border-width: 1px;
@@ -5640,7 +5719,7 @@ header .buttons > li:first-child {
   margin-bottom: 1.25em;
   padding: 1.25em;
   background: #f2f2f2;
-  background: #138eb4 url("../images/fabric_1.png");
+  background: #fff5cb url("../images/fabric_of_squares_gray.png");
 }
 /* line 43, ../../../../.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/gems/zurb-foundation-4.0.9/scss/foundation/components/_panels.scss */
 #main h1, #main h2, #main h3, #main h4, #main h5, #main h6, #main p {
@@ -5663,29 +5742,85 @@ header .buttons > li:first-child {
 #main h1.subheader, #main h2.subheader, #main h3.subheader, #main h4.subheader, #main h5.subheader, #main h6.subheader {
   line-height: 1.4;
 }
-/* line 96, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 #main #about {
-  background-color: #fff;
+  background-color: #c1e6f1;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 101, ../scss/app.scss */
-#main img {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  padding: 7px;
-  background-color: #ddd;
-  border: 2px solid #fff;
+/* line 110, ../scss/app.scss */
+#main #about ul {
+  list-style-type: none;
+}
+/* line 114, ../scss/app.scss */
+#main #about li strong {
+  color: #222;
+  background-color: #ffe04f;
+  font-variant: small-caps;
+  font-family: "Rokkitt", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-@media only screen and (min-width: 64em) {
-  /* line 111, ../scss/app.scss */
+@media only screen {
+  /* line 125, ../scss/app.scss */
+  .small-column, #about li strong, #about li a, #about li span {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+  }
+
+  /* line 131, ../scss/app.scss */
+  #about li strong {
+    padding-left: 10px;
+  }
+  /* line 135, ../scss/app.scss */
+  #about li a, #about li span {
+    padding-left: 20px;
+  }
+}
+@media only screen and (min-width: 380px) and (max-width: 767px), only screen and (min-width: 920px) {
+  /* line 146, ../scss/app.scss */
+  #about li strong:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: transparent transparent transparent #ffe04f;
+    position: absolute;
+    right: -9px;
+    top: 7px;
+  }
+  /* line 153, ../scss/app.scss */
+  #about li strong {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 0;
+  }
+  /* line 158, ../scss/app.scss */
+  #about li a, #about li span {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 75%;
+    float: left;
+  }
+  /* line 161, ../scss/app.scss */
+  #about li strong, #about li a, #about li span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 1010px) {
+  /* line 172, ../scss/app.scss */
   #main {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

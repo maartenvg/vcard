@@ -1,0 +1,5 @@
+/* line 5, ../scss/ie.scss */
+body {
+  background: #138eb4 url("../images/bright_squares_2.png");
+  background-attachment: fixed;
+}
