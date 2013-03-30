@@ -9,15 +9,14 @@ sass_dir = "scss"
 images_dir = "images"
 javascripts_dir = "js"
 fonts_dir = "fonts"
-fonts_path = "fonts"
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = false
+relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false
 
 
 # If you prefer the indented syntax, you might want to regenerate this
