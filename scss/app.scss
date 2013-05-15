@@ -58,6 +58,8 @@ $icons-sprite-dimensions:true;
 @include font-face('Rokkitt', font-files('Rokkitt/rokkitt.woff','Rokkitt/rokkitt.ttf','Rokkitt/rokkitt.svg'), 'Rokkitt/rokkitt.eot');
 @include font-face('Ubuntu', font-files('Ubuntu/ubuntu.woff','Ubuntu/ubuntu.ttf','Ubuntu/ubuntu.svg'), 'Ubuntu/ubuntu.eot');
 @include font-face('PatuaOne', font-files('PatuaOne/patuaone.woff','PatuaOne/patuaone.ttf','PatuaOne/patuaone.svg'), 'PatuaOne/patuaone.eot');
+@include font-face('Vegur Bold', font-files('Vegur-Bold/Vegur-Bold.woff','Vegur-Bold/Vegur-Bold.ttf','Vegur-Bold/Vegur-Bold.svg'), 'Vegur-Bold/Vegur-Bold.eot');
+
 
 $overlay-color: rgb(19, 142, 180);
 $main-color: #FFF5CB;
@@ -69,16 +71,17 @@ $about-header-color: #ffe04f;
 $block-grid-default-spacing: 0px;
 
 body {
-  @include background( 
+  @include background(
     radial-gradient(50% 50%, ellipse farthest-corner, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
-    $overlay-color image-url('bright_squares_2.png') 
+    $overlay-color image-url('bright_squares_2.png')
   );
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 header {
   margin-top: 50px !important;
-  h1, h2 { 
+  h1, h2 {
     color: #ddd;
     font-variant: small-caps;
   }
@@ -98,28 +101,28 @@ header {
 #main {
   @include panel;
   @include background($main-color image-url('fabric_of_squares_gray.png'));
-  
+
   #about {
     background-color: $about-color;
     @include border-radius($border-radius-small);
-    
+
     ul {
       list-style-type: none;
     }
-    li {      
+    li {
       strong {
         color: #222;
-        background-color: $about-header-color;       
+        background-color: $about-header-color;
         font-variant: small-caps;
         font-family: $header-font-family
       }
     }
   }
-  
+
   .social a {
     color: gray;
   }
-  
+
   .social a:hover {
     color: blue;
   }
@@ -129,11 +132,11 @@ header {
   .small-column {
     @include grid-column(12);
   }
-  
+
   #social {
-    @include block-grid(3); 
+    @include block-grid(3);
   }
-  
+
   #about {
     li {
       strong {
@@ -152,11 +155,11 @@ header {
 @media only screen and (min-width: 400px)
 {
   #social > li { clear: none !important; }
-  
+
   #social {
-    @include block-grid(9); 
+    @include block-grid(9);
   }
-  
+
   #main p {
     text-align: justify;
   }
@@ -174,8 +177,8 @@ header {
 }
 
 @media only screen and (min-width: 400px) and (max-width: 767px), only screen and (min-width: 920px) {
-  
-  
+
+
   #about {
     li {
       strong:after {
@@ -184,12 +187,12 @@ header {
         right: -9px;
         top: 7px;
       }
-      
+
       strong {
         @include grid-column(3);
         text-align: center;
         padding: 0;
-      } 
+      }
       a, span {
         @include grid-column(9);
       }
@@ -203,10 +206,11 @@ header {
 
 
 // Screens > 1024px
-@media only screen and (min-width: 1010px) { 
+@media only screen and (min-width: 1010px) {
   #main {
     @include border-radius($border-radius);
     @include box-shadow($shadow);
   }
-} 
+}
 
+@import 'shopify'
