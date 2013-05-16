@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume for Shopify :: Maarten van Grootel</title>
+    <title>For Shopify :: Maarten van Grootel</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/font-icons.css" />
@@ -27,6 +27,7 @@
       </div>
     </header>
     <div class="row" id="main">
+      <!-- WELCOME! -->
       <div id="welcome" class="page">
         <div class="small-12 large-12 columns center">
           <h2>I'm <abbr title="Pronounced as /'maːrtə(n)/, but feel free to call me Martin">Maarten</abbr> and I want to <span id="words">work with</span> you</h2>
@@ -34,26 +35,33 @@
         <div class="small-6 columns">
           <h3>Who?</h3>
           <p>
-            I'm a passionate software developer from the Netherlands, currently living in Montréal. In July I'm moving to Ottawa.
+            I'm a passionate software developer from the Netherlands, currently living in Montréal. In July I'm moving to Ottawa, and
+            I'm looking for a great place to do what I do best: making great software.
           </p>
 
           <h3>Why?</h3>
           <p>
-            What and how <span class="shopify-branding">shopify</span> does things is exactly how I function best. Surrounded by smart and fun people,
-            working hard in an enviroment that knows how to produce good software.
+            What and how <span class="shopify-branding">shopify</span> does things is exactly how I function best: surrounded by smart and fun people,
+            working hard for a company that understands how to produce great software well.
           </p>
 
-          <h3>Strengths?</h3>
+          <h3>Pet Peeves?</h3>
           <p>
-            Learning, coding, architectures.
+            Clean code, full range testing,
           </p>
         </div>
         <div class="small-6 columns">
-          <h3>What?</h3>
+          <h3>Background?</h3>
           <p>
-            I studied Artificial Intelligence, while being a self-employed PHP-developer. Then started at a SaaS company building web applications in Java and C#.NET.
-            I grew quickly to lead developer in several projects, but was also frequently used as an emergency help.
+            I studied Artificial Intelligence, while being a self-employed PHP-developer. After that I started at a SaaS company building web applications in Java and C#.
+            I moved quickly from code monkey to lead developer in several projects, as well as emergency helper for difficult or time critical problems.
           </p>
+
+          <h3>No Ruby?</h3>
+          <p>
+            Recently I started working with Ruby and Rails, and I found it refreshing and perfect for quick development.
+          </p>
+
           <h3>Experience?</h3>
           <dl>
             <dt>
@@ -78,7 +86,7 @@
               Obviously
             </dt>
             <dd>
-              git, svn, team work, focussed
+              git, svn, team work, focused
             </dd>
           </dl>
         </div>
@@ -86,6 +94,8 @@
           <a href="cv.html"><img src="images/shopify/trash.png" /></a><strong>&#8672; my <a href="cv.html">resume</a></strong>
         </div>
       </div>
+
+      <!-- RESUME -->
       <div id="cv" class="page">
         <div class="small-12 columns">
           <h2 class="center">I threw it out, but here it is anyways</h2>
@@ -182,16 +192,20 @@
         </div>
       </div>
 
+      <!-- DRAW THE OWL -->
       <div id="owl" class="page">
         <div class="small-12 columns center">
           <h2>Can I draw the owl?</h2>
         </div>
-        <div class="small-6 columns center">
+        <div class="small-12 columns">
+          <img style="float:left" src="images/shopify/only_owl.png"  />
           <p>
-            Of course I can :D
+            I sure can! Like the one on the left for example. But it's not as cool as the many, many, cool photos of owls available online.
           </p>
+        </div>
+        <div class="small-12 columns center">
           <p class="back">
-            <a href="shopify.html" >Go Back</a>
+            <a href="shopify.html">Go Back</a>
           </p>
         </div>
       </div>
@@ -262,7 +276,8 @@
     <script src="js/foundation/foundation.tooltips.js"></script> -->
 
     <script>
-      var wordList = ['learn from', 'work for', 'develop with', 'help', 'create with', 'work with', 'be awesome with']
+      var wordList = ['learn from', 'drink beer with', 'develop with', 'help', 'create with', 'work with', 'be awesome with']
+
       $(document).foundation();
 
       $.fn.highlight = function() {
@@ -271,24 +286,8 @@
         var originalColor = this.css("color");
         this.stop().css("color", c).animate({
           color : originalColor
-        }, 1500);
+        }, duration);
       };
-
-      $(document).ready(function() {
-        $(".cv a").click(function(e) {
-          switchPage('cv', e);
-        });
-
-        $(".back a").click(function(e) {
-          switchPage('welcome', e);
-        });
-
-        $("a.owl").click(function(e) {
-          switchPage('owl', e);
-        });
-
-        setInterval(updateWords, 3000)
-      });
 
       function switchPage(page, event) {
         event.preventDefault();
@@ -305,7 +304,25 @@
         $("#words:visible").text(word).highlight();
         wordList.push(word);
       }
+
+
+      $(document).ready(function() {
+        $(".cv a").click(function(e) {
+          switchPage('cv', e);
+        });
+
+        $(".back a").click(function(e) {
+          switchPage('welcome', e);
+        });
+
+        $("a.owl").click(function(e) {
+          switchPage('owl', e);
+        });
+
+        setInterval(updateWords, 3000)
+      });
     </script>
+
     <script type="text/javascript">
       var _gaq = _gaq || [];
       //_gaq.push(['_setAccount', 'UA-1364628-5']);
