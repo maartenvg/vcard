@@ -23,18 +23,78 @@ header h1 {
   }
 }
 
+.big-owl {
+  float:left;
+  height: 200px;
+  margin-right: 20px;
+}
 
 .cv {
+  text-align: right;
   font-family: 'Rokkitt';
   font-size: 2em;
-  img { vertical-align: middle; }
+  img { vertical-align: middle; margin-left: -10px;}
 }
 
 #cv, #owl {
-  //display: none;
+  display: none;
 }
 
+pre#owl-image {
+  font-size: 0.7em;
+  line-height: 0.6em;
+  text-align: right;
+  margin-right: 30px;
+}
+
+a#owl-url {
+  display: none;
+  margin-right: 30px;
+}
 
 dt span {
   font-weight: normal;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .owl {
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    img {
+      height: 100px;
+    }
+  }
+
+  .cv {
+    img {
+      height: 75px;
+    }
+  }
+
+  header {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .owl {
+    top: 0px !important;
+    right: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+  header {
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .owl {
+    top: 30px;
+    img {
+      height: 150px;
+    }
+  }
 }

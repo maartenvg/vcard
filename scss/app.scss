@@ -1,47 +1,6 @@
-// Global Foundation Settings
 @import "settings";
 
-// Comment out this import if you are customizing you imports below
 @import "foundation";
-
-// Import specific parts of Foundation by commenting the import "foundation"
-// and uncommenting what you want below. You must uncomment the following if customizing
-
-// @import "foundation/foundation-global";
-// @import "foundation/components/grid";
-// @import "foundation/components/visibility";
-// @import "foundation/components/block-grid";
-// @import "foundation/components/type";
-// @import "foundation/components/buttons";
-// @import "foundation/components/forms";
-// @import "foundation/components/custom-forms";
-// @import "foundation/components/button-groups";
-// @import "foundation/components/dropdown-buttons";
-// @import "foundation/components/split-buttons";
-// @import "foundation/components/flex-video";
-// @import "foundation/components/section";
-// @import "foundation/components/top-bar";
-// @import "foundation/components/orbit";
-// @import "foundation/components/reveal";
-// @import "foundation/components/joyride";
-// @import "foundation/components/clearing";
-// @import "foundation/components/alert-boxes";
-// @import "foundation/components/breadcrumbs";
-// @import "foundation/components/keystrokes";
-// @import "foundation/components/labels";
-// @import "foundation/components/inline-lists";
-// @import "foundation/components/pagination";
-// @import "foundation/components/panels";
-// @import "foundation/components/pricing-tables";
-// @import "foundation/components/progress-bars";
-// @import "foundation/components/side-nav";
-// @import "foundation/components/sub-nav";
-// @import "foundation/components/switch";
-// @import "foundation/components/magellan";
-// @import "foundation/components/tables";
-// @import "foundation/components/thumbs";
-// @import "foundation/components/tooltips";
-// @import "foundation/components/dropdown";
 
 .icons-sprite {
   display: inline-block;
@@ -152,8 +111,7 @@ header {
 }
 
 // Anything larger than 400px
-@media only screen and (min-width: 400px)
-{
+@media only screen and (min-width: 400px) {
   #social > li { clear: none !important; }
 
   #social {
@@ -166,8 +124,7 @@ header {
 }
 
 // Anything smaller than 280px
-@media only screen and (max-width: 280px)
-{
+@media only screen and (max-width: 280px) {
   body {
     font-size: 0.8em;
   }
@@ -177,8 +134,6 @@ header {
 }
 
 @media only screen and (min-width: 400px) and (max-width: 767px), only screen and (min-width: 920px) {
-
-
   #about {
     li {
       strong:after {
